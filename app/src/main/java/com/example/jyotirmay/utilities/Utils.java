@@ -20,7 +20,7 @@ public class Utils {
     public static ArrayList<Util> getUtils() {
         ArrayList<Utils.Util> UTIL = new ArrayList<>(10);
         UTIL.add(new Util("Caculator",R.drawable.uti1));
-        UTIL.add(new Util("Stopwatch",R.drawable.uti1));
+        UTIL.add(new Util("Stopwatch",R.drawable.stopwatch));
         UTIL.add(new Util("AlarmClock",R.drawable.uti1));
         UTIL.add(new Util("Calender",R.drawable.uti1));
         UTIL.add(new Util("Flashlight",R.drawable.uti1));
