@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jyotirmay.utilities.NotePadActivity">
+
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/custom_et"
+    android:id="@+id/et_cus"
+    android:textStyle="italic"
+    android:hint="NOTES"
+    android:paddingLeft="50dp"
+    android:paddingTop="50dp"
+    android:layout_alignParentTop="false"
+    android:gravity="top" />
+
+</RelativeLayout>

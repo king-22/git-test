@@ -45,7 +45,15 @@ public class Main2Activity extends Activity {
                         Intent cal = new Intent(Main2Activity.this,CALCActivity.class);
                         startActivity(cal);
                         break;
-                    case 3:
+                    case 1:
+                        Intent sto = new Intent(Main2Activity.this,Stopwatch_Activity.class);
+                        startActivity(sto);
+                        break;
+                    case  2:
+                        Intent alm = new Intent(Main2Activity.this , AlarmActivity.class);
+                        startActivity(alm);
+                        break;
+                    case 6:
                         long startMillis=0;
 
                         Uri.Builder builder = CalendarContract.CONTENT_URI.buildUpon();
@@ -55,6 +63,17 @@ public class Main2Activity extends Activity {
                                 .setData(builder.build());
                         startActivity(intent);
                         break;
+                    case 4 :
+                        Intent ntp = new Intent(Main2Activity.this,NotePadActivity.class);
+                        startActivity(ntp);
+                        break;
+
+                    case 5 :
+                        Intent fls = new Intent(Main2Activity.this,FlashLightActivity.class);
+                        startActivity(fls);
+                        break;
+
+
                     default:
                         String name = ((TextView) view.findViewById(R.id.tv_utils)).getText().toString();
                         Toast.makeText(Main2Activity.this, name+" " + "Under"+" "+" Development", Toast.LENGTH_SHORT).show();
