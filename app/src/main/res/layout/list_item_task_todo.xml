@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="task item"
+        android:textSize="40sp"
+        android:id="@+id/tv_taskname"
+        />
+
+    <TextView
+        android:layout_below="@id/tv_taskname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="task date"
+        android:textSize="25sp"
+        android:id="@+id/tv_taskdate"
+        />
+    <android.support.v7.widget.AppCompatCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="73dp"
+        android:id="@+id/cb_done"
+        android:layout_below="@+id/tv_taskname" />
+
+
+</RelativeLayout>

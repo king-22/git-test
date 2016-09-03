@@ -21,6 +21,8 @@ import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.jyotirmay.utilities.todo.TODOActivity;
+
 import java.util.ArrayList;
 
 public class Main2Activity extends Activity {
@@ -53,6 +55,10 @@ public class Main2Activity extends Activity {
                         Intent alm = new Intent(Main2Activity.this , AlarmActivity.class);
                         startActivity(alm);
                         break;
+                    case 3:
+                        Intent tdo = new Intent(Main2Activity.this, TODOActivity.class);
+                        startActivity(tdo);
+                        ;break;
                     case 6:
                         long startMillis=0;
 

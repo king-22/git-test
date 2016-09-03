@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="com.example.jyotirmay.utilities.todo.TODOActivity">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="pick date"
+        android:id="@+id/btn_date"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="43dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Date"
+        android:textSize="30sp"
+        android:id="@+id/tv_date"
+        android:layout_alignBottom="@+id/btn_date"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_task"
+        android:hint="Enter Task"
+        android:textSize="25sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/tv_date" />
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_addTask"
+        android:text="ADD"
+        android:layout_above="@+id/lv_task"
+        android:layout_toEndOf="@+id/et_task"
+        android:layout_marginStart="41dp" />
+
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lv_task"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:layout_marginBottom="40dp"
+        android:layout_below="@id/tv_date"></ListView>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Delete All"
+        android:id="@+id/btn_delete"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

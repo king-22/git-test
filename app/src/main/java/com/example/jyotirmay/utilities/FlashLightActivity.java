@@ -9,6 +9,7 @@ import android.graphics.Color;
 import android.hardware.Camera;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.RelativeLayout;
@@ -23,6 +24,7 @@ public class FlashLightActivity extends Activity {
     private ImageButton btn;
     private Camera camera;
     RelativeLayout RL_FLASH;
+    public static final String TAG = "hey";
 
 
 
@@ -74,6 +76,60 @@ public class FlashLightActivity extends Activity {
 
     }
 
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.d("hey", "onPause: ");
+//        if (isFlashOn) {
+//            // turn off flash
+//            MyCamera();
+//            turnOffFlash();
+//            btn.setImageResource(R.drawable.button_switch_off);
+//        }
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        MyCamera();
+        turnOffFlash();
+        btn.setImageResource(R.drawable.button_switch_off);
+        Log.d(TAG, "onBackPressed: ");
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.d("hey", "onStop: ");
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+//        MyCamera();
+//        turnOnFlash();
+//        btn.setImageResource(R.drawable.button_switch_on);
+        Log.d("hey", "onResume: ");
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        Log.d(TAG, "onRestart: ");      
+    }
+
+    @Override
+    protected void onPostResume() {
+        super.onPostResume();
+        Log.d(TAG, "onPostResume: ");
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.d(TAG, "onStart: ");
+    }
+
     private  void MyCamera(){
 
         if(camera == null){
@@ -95,7 +151,7 @@ public class FlashLightActivity extends Activity {
                 }
 
 
-                params = camera.getParameters();
+              //  params = camera.getParameters();
                 params.setFlashMode(Camera.Parameters.FLASH_MODE_TORCH);
                 camera.setParameters(params);
                 camera.startPreview();
@@ -114,7 +170,7 @@ public class FlashLightActivity extends Activity {
 
 
 
-            params = camera.getParameters();
+          //  params = camera.getParameters();
             params.setFlashMode(Camera.Parameters.FLASH_MODE_OFF);
             camera.setParameters(params);
             camera.stopPreview();

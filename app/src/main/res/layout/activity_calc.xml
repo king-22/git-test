@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="@color/purple"
+    android:background="@drawable/custom_et"
     tools:context="com.example.jyotirmay.utilities.CALCActivity">
     <EditText
         android:layout_width="match_parent"
@@ -173,14 +173,25 @@
             android:layout_width="wrap_content"
             android:layout_height="80dp"
             android:text="C"
+            android:layout_weight="1"
             android:background="@color/blue"
             android:id="@+id/btn_clear"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:text="."
+            android:textSize="30sp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:id="@+id/btn_dot"
             />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="80dp"
             android:text="0"
+            android:layout_weight="1"
             android:id="@+id/btn_0"
             />
 
@@ -188,6 +199,7 @@
             android:layout_width="wrap_content"
             android:layout_height="80dp"
             android:text="="
+            android:layout_weight="1"
             android:layout_marginEnd="3dp"
             android:background="@color/blue"
             android:id="@+id/btn_equal"
