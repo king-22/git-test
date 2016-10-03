@@ -19,15 +19,13 @@ public class Utils {
 
     public static ArrayList<Util> getUtils() {
         ArrayList<Utils.Util> UTIL = new ArrayList<>(9);
-        UTIL.add(new Util("Caculator",R.drawable.calculator));
+        UTIL.add(new Util("Calculator",R.drawable.calculator_min));
         UTIL.add(new Util("Stopwatch",R.drawable.stopwatch));
-        UTIL.add(new Util("AlarmClock",R.drawable.alarm));
-        UTIL.add(new Util("To-Do List",R.drawable.todo));
-        UTIL.add(new Util("Notepad",R.drawable.notepad));
-        UTIL.add(new Util("Flashlight",R.drawable.flashlight));
-        UTIL.add(new Util("Calender",R.drawable.calender));
-        UTIL.add(new Util("Dictionary",R.drawable.dictionary));
-        UTIL.add(new Util("ETC",R.drawable.etc));
+        UTIL.add(new Util("AlarmClock",R.drawable.alarm_min));
+        UTIL.add(new Util("To-Do List",R.drawable.todo_min));
+        UTIL.add(new Util("Notepad",R.drawable.ntpad));
+        UTIL.add(new Util("Flashlight",R.drawable.flashlight_min));
+        UTIL.add(new Util("Calendar",R.drawable.calender_min));
         return UTIL;
 
     }

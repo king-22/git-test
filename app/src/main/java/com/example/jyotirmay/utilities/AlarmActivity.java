@@ -34,16 +34,14 @@ public class AlarmActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_alarm2);
 
-        button_date = (Button) findViewById(R.id.btn);
+
         button_time = (Button) findViewById(R.id.btn1);
         button_setalarm = (Button) findViewById(R.id.btn_setalarm);
 
-        Tv_date = (TextView) findViewById(R.id.tv_date);
         Tv_time = (TextView) findViewById(R.id.tv_time);
 
         ET_message = (EditText) findViewById(R.id.et_message);
 
-        showDatePickerDialog();
         showTimePickerDialog();
 
         button_setalarm.setOnClickListener(new View.OnClickListener() {
@@ -56,38 +54,15 @@ public class AlarmActivity extends AppCompatActivity {
                 message = ET_message.getText().toString();
                 alarm.putExtra(AlarmClock.EXTRA_MESSAGE,message);
                 startActivity(alarm);
+                ET_message.setText(null);
+                Tv_time.setText(null);
 
             }
         });
         }
 
 
-    public void showDatePickerDialog() {
 
-        button_date.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                datePickerDialog.show();
-            }
-        });
-
-
-        Calendar calendar = Calendar.getInstance();
-        datePickerDialog = new DatePickerDialog(this, new DatePickerDialog.OnDateSetListener() {
-            @Override
-            public void onDateSet(DatePicker datePicker, int i, int i1, int i2) {
-                Calendar c = Calendar.getInstance();
-                c.set(i, i1, i2);
-                month = i1 + 1;
-                Tv_date.setText(i + "-" + month + "-" + i2);
-            }
-        }
-
-                , calendar.get(Calendar.YEAR), calendar.get(Calendar.MONTH), calendar.get(Calendar.DAY_OF_MONTH));
-
-
-
-    }
 
     public void showTimePickerDialog() {
 

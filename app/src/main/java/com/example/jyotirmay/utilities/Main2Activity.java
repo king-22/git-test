@@ -133,9 +133,9 @@ public class Main2Activity extends Activity {
             if(convertview == null){
                 int pos = getItemViewType(position);
             if(pos==0){
-            convertview = LI.inflate(R.layout.list_view1,null);  }
+            convertview = LI.inflate(R.layout.list_view2,null);  }
             else {
-                convertview = LI.inflate(R.layout.list_view2,null);}
+                convertview = LI.inflate(R.layout.list_view1,null);}
             viewholder = new ViewHolder();
             viewholder.Utilimage  = (ImageView) convertview.findViewById(R.id.img_utils);
             viewholder.Utilname  = (TextView) convertview.findViewById(R.id.tv_utils);

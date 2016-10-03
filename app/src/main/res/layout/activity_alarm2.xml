@@ -6,53 +6,51 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="@drawable/custom_etc"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.jyotirmay.utilities.AlarmActivity">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="pick date"
-        android:id="@+id/btn"
-        />
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="pick time"
-        android:layout_alignParentRight="true"
+        android:textColor="@color/white"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="30dp"
+        android:background="@drawable/custom_et4"
+
         android:id="@+id/btn1"
         />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="date"
-        android:layout_below="@id/btn"
-        android:textSize="30sp"
-        android:id="@+id/tv_date"/>
+
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="time"
+        android:text="TIME"
+        android:textColor="@color/black"
+        android:layout_marginTop="60dp"
        android:layout_alignParentRight="true"
-        android:layout_marginStart="40dp"
-        android:layout_below="@id/btn"
         android:textSize="30sp"
+        android:layout_marginEnd="30dp"
         android:id="@+id/tv_time"/>
 
 <Button
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_centerHorizontal="true"
+  android:layout_centerInParent="true"
     android:text="set alarm"
+    android:background="@drawable/custom_et2"
     android:id="@+id/btn_setalarm"/>
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
+        android:layout_above="@+id/btn_setalarm"
         android:hint="enter the alarm message"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
         android:id="@+id/et_message"/>
 
 </RelativeLayout>

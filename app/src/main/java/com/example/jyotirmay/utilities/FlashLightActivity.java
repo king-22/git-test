@@ -60,13 +60,13 @@ public class FlashLightActivity extends Activity {
                     // turn off flash
                     MyCamera();
                     turnOffFlash();
-                    btn.setImageResource(R.drawable.button_switch_off);
+                    btn.setImageResource(R.drawable.button_switch_off_min);
 
                 } else {
                     // turn on flash
                     MyCamera();
                     turnOnFlash();
-                    btn.setImageResource(R.drawable.button_switch_on);
+                    btn.setImageResource(R.drawable.button_switch_on_min);
 
 
                 }
@@ -93,7 +93,7 @@ public class FlashLightActivity extends Activity {
         super.onBackPressed();
         MyCamera();
         turnOffFlash();
-        btn.setImageResource(R.drawable.button_switch_off);
+        btn.setImageResource(R.drawable.button_switch_off_min);
         Log.d(TAG, "onBackPressed: ");
     }
 

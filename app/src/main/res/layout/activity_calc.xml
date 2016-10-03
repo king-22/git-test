@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="@drawable/custom_et"
+    android:background="@drawable/custom_eta"
     tools:context="com.example.jyotirmay.utilities.CALCActivity">
     <EditText
         android:layout_width="match_parent"
@@ -22,6 +22,7 @@
         android:layout_height="60dp"
         android:layout_marginTop="40dp"
         android:text="operation"
+        android:textColor="@color/black"
         android:gravity="center"
         android:id="@+id/tv_op"
         android:textSize="20sp"
@@ -34,6 +35,7 @@
         android:layout_marginStart="110dp"
         android:layout_marginLeft="110dp"
         android:text="result"
+        android:textColor="@color/black"
         android:gravity="center"
         android:id="@+id/tv_result"
         android:textSize="45sp"
@@ -49,20 +51,25 @@
             android:layout_width="wrap_content"
             android:layout_height="80dp"
             android:text="1"
+            android:layout_weight="1"
             android:id="@+id/btn_1"
-            />
+            android:background="@drawable/custom_et1"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="80dp"
             android:text="2"
+            android:layout_weight="1"
             android:id="@+id/btn_2"
+            android:background="@drawable/custom_et1"
             />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="80dp"
             android:text="3"
+            android:layout_weight="1"
+            android:background="@drawable/custom_et1"
             android:id="@+id/btn_3"
             />
 
@@ -70,7 +77,9 @@
             android:layout_width="wrap_content"
             android:layout_height="80dp"
             android:text="/"
-            android:background="@color/blue"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_et2"
             android:id="@+id/btn_div"
             />
 
@@ -91,6 +100,8 @@
             android:layout_width="wrap_content"
             android:layout_height="80dp"
             android:text="4"
+            android:layout_weight="1"
+            android:background="@drawable/custom_et1"
             android:id="@+id/btn_4"
             />
 
@@ -98,21 +109,25 @@
             android:layout_width="wrap_content"
             android:layout_height="80dp"
             android:text="5"
+            android:layout_weight="1"
             android:id="@+id/btn_5"
-            />
+            android:background="@drawable/custom_et1"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="80dp"
             android:text="6"
+            android:layout_weight="1"
             android:id="@+id/btn_6"
-            />
+            android:background="@drawable/custom_et1"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="80dp"
             android:text = "*"
-            android:background="@color/blue"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_et2"
             android:id="@+id/btn_mul"
             />
 
@@ -131,28 +146,33 @@
             android:layout_width="wrap_content"
             android:layout_height="80dp"
             android:text="7"
+            android:layout_weight="1"
             android:id="@+id/btn_7"
-            />
+            android:background="@drawable/custom_et1"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="80dp"
             android:text="8"
+            android:layout_weight="1"
             android:id="@+id/btn_8"
-            />
+            android:background="@drawable/custom_et1"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="80dp"
             android:text="9"
+            android:layout_weight="1"
             android:id="@+id/btn_9"
-            />
+            android:background="@drawable/custom_et1"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="80dp"
             android:text="-"
-            android:background="@color/blue"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_et2"
             android:id="@+id/btn_sub"
             />
 
@@ -173,8 +193,9 @@
             android:layout_width="wrap_content"
             android:layout_height="80dp"
             android:text="C"
-            android:layout_weight="1"
-            android:background="@color/blue"
+            android:textSize="20sp"
+            android:layout_weight="75"
+            android:background="@drawable/custom_et2"
             android:id="@+id/btn_clear"
             />
         <Button
@@ -183,25 +204,26 @@
             android:text="."
             android:textSize="30sp"
             android:layout_marginTop="5dp"
-            android:layout_weight="1"
+            android:layout_weight="75"
             android:id="@+id/btn_dot"
-            />
+            android:background="@drawable/custom_et1"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="80dp"
             android:text="0"
-            android:layout_weight="1"
+            android:layout_weight="75"
             android:id="@+id/btn_0"
-            />
+            android:background="@drawable/custom_et1"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="80dp"
             android:text="="
-            android:layout_weight="1"
+            android:textSize="20sp"
+            android:layout_weight="75"
             android:layout_marginEnd="3dp"
-            android:background="@color/blue"
+            android:background="@drawable/custom_et2"
             android:id="@+id/btn_equal"
             />
 
@@ -209,7 +231,9 @@
             android:layout_width="wrap_content"
             android:layout_height="80dp"
             android:text="+"
-            android:background="@color/blue"
+            android:layout_weight="50"
+            android:textSize="20sp"
+            android:background="@drawable/custom_et2"
             android:id="@+id/btn_add"
             />
 

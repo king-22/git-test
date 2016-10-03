@@ -19,7 +19,7 @@ public class CALCActivity extends Activity {
     private TextView  TV_result , TV_op;
     private Button Btn_1, Btn_2, Btn_3 ,Btn_4,Btn_5,Btn_6,Btn_7,Btn_8,Btn_9,Btn_0,Btn_clear,Btn_dot,Btn_equal,Btn_add,Btn_sub,Btn_mul,Btn_div;
     float a=0 , b=0 , c=0;
-    int op;
+    int op ,  count_dot=0 , count_op=0 ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,15 +64,22 @@ public class CALCActivity extends Activity {
                     case(R.id.btn_7): ET_var1.setText(ET_var1.getText().toString()+"7"); break;
                     case(R.id.btn_8): ET_var1.setText(ET_var1.getText().toString()+"8"); break;
                     case(R.id.btn_9): ET_var1.setText(ET_var1.getText().toString()+"9"); break;
-                    case(R.id.btn_dot): ET_var1.setText(ET_var1.getText().toString()+"."); break;
+                    case(R.id.btn_dot):
+                        if( ET_var1.getText().toString().isEmpty() || count_dot>0){ET_var1.setText(null);count_dot=0;}
+                        else{ET_var1.setText(ET_var1.getText().toString()+".");
+                        count_dot++;} break;
 
-                    case(R.id.btn_add):a= ET_var1.getText().toString().isEmpty()?0:Float.parseFloat(ET_var1.getText().toString());
+                    case(R.id.btn_add):count_dot=0;
+                        a= ET_var1.getText().toString().isEmpty()?0:Float.parseFloat(ET_var1.getText().toString());
                         op=1; ET_var1.setText(null);TV_op.setText("+");break;
-                    case(R.id.btn_sub):a=ET_var1.getText().toString().isEmpty()?0: Float.parseFloat(ET_var1.getText().toString());
+                    case(R.id.btn_sub):count_dot=0;
+                        a=ET_var1.getText().toString().isEmpty()?0: Float.parseFloat(ET_var1.getText().toString());
                         ET_var1.setText(null);op=2;TV_op.setText("-");break;
-                    case(R.id.btn_mul):a=ET_var1.getText().toString().isEmpty()?0:Float.parseFloat(ET_var1.getText().toString());
+                    case(R.id.btn_mul):count_dot=0;
+                        a=ET_var1.getText().toString().isEmpty()?0:Float.parseFloat(ET_var1.getText().toString());
                         ET_var1.setText(null);op=3;TV_op.setText("*");break;
-                    case(R.id.btn_div):a=ET_var1.getText().toString().isEmpty()?0:Float.parseFloat(ET_var1.getText().toString());
+                    case(R.id.btn_div):count_dot=0;
+                        a=ET_var1.getText().toString().isEmpty()?0:Float.parseFloat(ET_var1.getText().toString());
                         ET_var1.setText(null);op=4;TV_op.setText("/");break;
 
                     case(R.id.btn_clear): ET_var1.setText(null);TV_result.setText(null);TV_op.setText(null);a=0;b=0; break;

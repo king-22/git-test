@@ -2,13 +2,18 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/custom_etbb"
     android:descendantFocusability="blocksDescendants">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="task item"
+        android:textStyle="italic"
+        android:textColor="@color/black"
         android:textSize="40sp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
         android:id="@+id/tv_taskname"
         />
 
@@ -17,10 +22,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="task date"
+        android:paddingLeft="20dp"
+        android:paddingBottom="10dp"
+        android:textStyle="italic"
         android:textSize="25sp"
         android:id="@+id/tv_taskdate"
         />
-    <android.support.v7.widget.AppCompatCheckBox
+    android.support.v7.widget.AppCompatCheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"

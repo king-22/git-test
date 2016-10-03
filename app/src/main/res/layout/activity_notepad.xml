@@ -8,7 +8,7 @@
 <EditText
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/custom_et"
+    android:background="@drawable/custom_etbb"
     android:id="@+id/et_cus"
     android:textStyle="italic"
     android:hint="NOTES"

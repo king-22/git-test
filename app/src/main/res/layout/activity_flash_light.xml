@@ -17,7 +17,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="100dip"
-        android:src="@drawable/button_switch_off"
+        android:src="@drawable/button_switch_off_min"
         android:background="@null"
         android:contentDescription="@null"
         />

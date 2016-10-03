@@ -60,7 +60,7 @@ public class Stopwatch_Activity extends Activity {
                 milliseconds = (int) (updatedtime % 1000);
                 TIME.setText("" + mins + ":" + String.format("%02d", secs) + ":"
                         + String.format("%03d", milliseconds));
-                TIME.setTextColor(Color.RED);
+                TIME.setTextColor(Color.BLACK);
                 handler.postDelayed(this, 0);
             }
 
@@ -83,7 +83,7 @@ public class Stopwatch_Activity extends Activity {
                 } else {
 //timer will pause
                     START.setText("Start");
-                    TIME.setTextColor(Color.BLUE);
+                    TIME.setTextColor(Color.WHITE);
                     timeSwapBuff += timeInMilliseconds;
                     handler.removeCallbacks(updateTimer);
                     t = 1;

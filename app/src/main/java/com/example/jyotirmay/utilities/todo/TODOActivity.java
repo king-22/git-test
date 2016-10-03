@@ -4,6 +4,7 @@ import android.app.DatePickerDialog;
 import android.content.ContentValues;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.graphics.Paint;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.AppCompatCheckBox;
@@ -212,20 +213,19 @@ public static final String TAG1 = "hey";
                 return false;
             }
         });
-        LV_TASK.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-
-                AppCompatCheckBox cb = (AppCompatCheckBox) view.findViewById(R.id.cb_done);
-                cb.toggle();
-
-//                TextView n = (TextView) view.findViewById(R.id.tv_taskname);
-//                n.setPaintFlags(n.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
+//        LV_TASK.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//            @Override
+//            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 //
+//
+//
+//                TextView n = (TextView) view.findViewById(R.id.tv_taskname);
+//               n.setPaintFlags(n.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
+////
 //                TextView d = (TextView) view.findViewById(R.id.tv_taskdate);
 //                d.setPaintFlags(d.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
-            }
-        });
+//            }
+//        });
 
 
 

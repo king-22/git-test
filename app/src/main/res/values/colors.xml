@@ -7,6 +7,12 @@
     <color name="mycolor">#e28255</color>
     <color name="yellow">#f4fc08</color>
     <color name="purple">#736396</color>
+    <color name="icon_col">#78c79b</color>
+    <color name="white">#f9fcfa</color>
+    <color name="black">#050505</color>
+    <color name="greyblack">#6a6c6b</color>
+    <color name="lightgrey">#d0d2d1</color>
+    <color name="niceblue">#FF7995A8</color>
 
 </resources>
 
